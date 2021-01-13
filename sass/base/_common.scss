@@ -1,0 +1,39 @@
+body {
+  font-family: var(--main-font);
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.nav-list,
+.portfolio-nav-list,
+.portfolio-list,
+.header-contacts,
+.principles-list,
+.description-list,
+.team-list,
+.footer-address-list {
+  list-style: none;
+}

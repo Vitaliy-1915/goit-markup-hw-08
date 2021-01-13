@@ -1,0 +1,52 @@
+.clients {
+  padding: 94px 0px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: #212121;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+
+    &-item {
+      display: block;
+      list-style: none;
+    }
+
+    &-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      min-width: 170px;
+      height: 90px;
+    }
+
+    &-icon {
+      margin: 22px 41px;
+      fill: #afb1b8;
+    }
+
+    &-wrapper:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &-link:hover &-icon,
+    &-link:focus &-icon {
+      fill: var(--active-link-color);
+    }
+
+    &-link:hover,
+    &-link:focus {
+      border-color: var(--active-link-color);
+    }
+  }
+}
