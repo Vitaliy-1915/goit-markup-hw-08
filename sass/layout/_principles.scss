@@ -1,12 +1,13 @@
 .principles {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
     margin-bottom: 10px;
     color: #212121;
@@ -21,31 +22,60 @@
   }
 }
 
-.principles-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.principles-list-icon {
+  width: 70px;
+  height: 70px;
 
-  &-icon {
-    width: 70px;
-    height: 70px;
-  }
-
-  &-icon-wrapper {
+  &-wrapper {
+    text-align: center;
     background-color: #f5f4fa;
     border-radius: 4px;
-    padding: 25px 100px;
+    padding: 25px 0;
     margin-bottom: 30px;
   }
+}
 
-  &-item:nth-child(4n),
-  &-icon-wrapper:nth-child(4n) {
-    margin-right: 0;
+@media screen and (max-width: 767px) {
+  .principles-list-item:not(:last-child) {
+    margin-bottom: 30px;
   }
-  &-item,
-  &-icon-wrapper {
-    margin-right: 30px;
-    flex-basis: calc(100% / 4 - 30px);
-    min-width: 270px;
+}
+
+@media screen and (min-width: 768px) {
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      flex-basis: calc(100% / 2 - 30px);
+      min-width: 354px;
+    }
+  }
+}
+
+.principles-name {
+  text-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  .principles {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-item:nth-child(4n) {
+      margin-right: 0;
+    }
+    &-item {
+      margin-right: 30px;
+      flex-basis: calc(100% / 4 - 30px);
+      min-width: 270px;
+    }
   }
 }

@@ -413,15 +413,15 @@ img {
   background-size: 480px 400px;
 }
 
-.conteiner-hero-banner {
-  text-align: center;
-  padding: 118px 45px;
-}
-
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img-m-@2x.jpg);
   }
+}
+
+.conteiner-hero-banner {
+  text-align: center;
+  padding: 118px 45px;
 }
 
 .hero-banner {
@@ -493,8 +493,8 @@ img {
 }
 
 .principles {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .principles-name {
@@ -502,6 +502,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   margin-bottom: 10px;
   color: #212121;
@@ -515,32 +516,59 @@ img {
   color: #757575;
 }
 
-.principles-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .principles-list-icon {
   width: 70px;
   height: 70px;
 }
 
 .principles-list-icon-wrapper {
+  text-align: center;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
+  padding: 25px 0;
   margin-bottom: 30px;
 }
 
-.principles-list-item:nth-child(4n), .principles-list-icon-wrapper:nth-child(4n) {
-  margin-right: 0;
+@media screen and (max-width: 767px) {
+  .principles-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.principles-list-item, .principles-list-icon-wrapper {
-  margin-right: 30px;
-  flex-basis: calc(100% / 4 - 30px);
-  min-width: 270px;
+@media screen and (min-width: 768px) {
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .principles-list-item {
+    flex-basis: calc(100% / 2 - 30px);
+    min-width: 354px;
+  }
+}
+
+.principles-name {
+  text-align: start;
+}
+
+@media screen and (min-width: 1200px) {
+  .principles {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .principles-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .principles-list-item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .principles-list-item {
+    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+    min-width: 270px;
+  }
 }
 
 .description {
