@@ -188,13 +188,29 @@
           <h2 class="description-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./team-photo/img-1.jpg"
-                alt="фото Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture class="team-list-item-picture">
+                <source
+                  srcset="
+                    ./team-photo/img-t-1x.jpg  1x,
+                    ./team-photo/img-t-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./team-photo/img-m-1x.jpg  1x,
+                    ./team-photo/img-m-@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="team-list-img"
+                  src="./team-photo/img-m-1x.jpg"
+                  alt="фото Демьяненко"
+                />
+              </picture>
+
               <div class="masters-list-content-wrapper">
                 <h3 class="team-list-name">Игорь Демьяненко</h3>
                 <p class="team-list-special" lang="en">Product Designer</p>
@@ -231,13 +247,28 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./team-photo/img-2.jpg"
-                alt="фото Репиной"
-                width="270"
-                height="260"
-              />
+              <picture class="team-list-item-picture">
+                <source
+                  srcset="
+                    ./team-photo/img-t2-1x.jpg  1x,
+                    ./team-photo/img-t2-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./team-photo/img-m2-1x.jpg  1x,
+                    ./team-photo/img-m2-@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./team-photo/img-m2-1x.jpg"
+                  alt="фото Репиной"
+                />
+              </picture>
+
               <div class="masters-list-content-wrapper">
                 <h3 class="team-list-name">Ольга Репина</h3>
                 <p class="team-list-special" lang="en">Frontend Developer</p>
@@ -274,13 +305,28 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./team-photo/img-3.jpg"
-                alt="фото Тарасова"
-                width="270"
-                height="260"
-              />
+              <picture class="team-list-item-picture">
+                <source
+                  srcset="
+                    ./team-photo/img-t3-1x.jpg  1x,
+                    ./team-photo/img-t3-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./team-photo/img-m3-1x.jpg  1x,
+                    ./team-photo/img-m3-@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./team-photo/img-m3-1x.jpg"
+                  alt="фото Тарасова"
+                />
+              </picture>
+
               <div class="masters-list-content-wrapper">
                 <h3 class="team-list-name">Николай Тарасов</h3>
                 <p class="team-list-special" lang="en">Marketing</p>
@@ -316,15 +362,29 @@
                 </ul>
               </div>
             </li>
-
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./team-photo/img-4.jpg"
-                alt="фото Ермакова"
-                width="270"
-                height="260"
-              />
+              <picture class="team-list-item-picture">
+                <source
+                  srcset="
+                    ./team-photo/img-t4-1x.jpg  1x,
+                    ./team-photo/img-t4-@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./team-photo/img-m4-1x.jpg  1x,
+                    ./team-photo/img-m4-@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./team-photo/img-m4-1x.jpg"
+                  alt="фото Ермакова"
+                />
+              </picture>
+
               <div class="masters-list-content-wrapper">
                 <h3 class="team-list-name">Михаил Ермаков</h3>
                 <p class="team-list-special" lang="en">UI Designer</p>
