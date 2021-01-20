@@ -1,23 +1,25 @@
 .clients {
-  padding: 94px 0px;
-
+  padding: 60px 0px;
   &-title {
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: bold;
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+
     color: #212121;
   }
 
   &-list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     &-item {
       display: block;
       list-style: none;
+      flex-basis: calc(100% / 2 - 30px);
     }
 
     &-link {
@@ -26,17 +28,27 @@
       align-items: center;
       border: 1px solid #afb1b8;
       border-radius: 4px;
-      min-width: 170px;
+      min-width: 210px;
       height: 90px;
     }
 
     &-icon {
-      margin: 22px 41px;
+      // margin: 22px 60px;
       fill: #afb1b8;
+      max-width: 210px;
     }
 
-    &-wrapper:not(:last-child) {
+    &-wrapper {
       margin-right: 30px;
+      margin-bottom: 30px;
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    &-wrapper:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &-wrapper:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
     }
 
     &-link:hover &-icon,
@@ -50,3 +62,56 @@
     }
   }
 }
+
+// .clients {
+//   padding: 94px 0px;
+
+//   &-title {
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.17;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+//     margin-bottom: 50px;
+//     color: #212121;
+//   }
+
+//   &-list {
+//     display: flex;
+//     justify-content: center;
+
+//     &-item {
+//       display: block;
+//       list-style: none;
+//     }
+
+//     &-link {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       border: 1px solid #afb1b8;
+//       border-radius: 4px;
+//       min-width: 170px;
+//       height: 90px;
+//     }
+
+//     &-icon {
+//       margin: 22px 41px;
+//       fill: #afb1b8;
+//     }
+
+//     &-wrapper:not(:last-child) {
+//       margin-right: 30px;
+//     }
+
+//     &-link:hover &-icon,
+//     &-link:focus &-icon {
+//       fill: var(--active-link-color);
+//     }
+
+//     &-link:hover,
+//     &-link:focus {
+//       border-color: var(--active-link-color);
+//     }
+//   }
+// }

@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .principles-list-item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -51,11 +51,15 @@
       flex-basis: calc(100% / 2 - 30px);
       min-width: 354px;
     }
-  }
-}
 
-.principles-name {
-  text-align: start;
+    &-item:nth-last-child(-n + 2) {
+      margin-bottom: 0px;
+    }
+  }
+
+  .principles-name {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1200px) {
