@@ -306,6 +306,7 @@ img {
 .portfolio-list-link {
   text-decoration: none;
   display: block;
+  height: 100%;
 }
 
 .portfolio-list-link:hover, .portfolio-list-link:focus {
