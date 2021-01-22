@@ -1,3 +1,48 @@
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+  color: #2196f3;
+}
+
+.header-hf-logo {
+  color: #000000;
+}
+
+.logo-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .nav-list {
+//   position: relative;
+//   overflow: hidden;
+// }
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+}
+
 // .header .conteiner {
 //   display: flex;
 //   align-items: center;
