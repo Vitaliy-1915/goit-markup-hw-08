@@ -26,15 +26,27 @@
             <a class="logo" href="./index.html"
               >Web<span class="header-hf-logo">Studio</span>
             </a>
-            <button type="button" class="menu-button">
-              <svg width="40" height="40">
-                <use href="./sprite.svg#icon-cross_40px"></use>
-                <use href="./sprite.svg#icon-menu_40px"></use>
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./sprite.svg#icon-cross_40px"
+                ></use>
+                <use class="icon-menu" href="./sprite.svg#icon-menu_40px"></use>
               </svg>
             </button>
           </div>
 
-          <div class="nav-list-contacts-wrapper">
+          <div class="menu-conteiner" data-menu>
             <ul class="nav-list">
               <li class="nav-list-item">
                 <a class="nav-list-link current any-transition" href=""
