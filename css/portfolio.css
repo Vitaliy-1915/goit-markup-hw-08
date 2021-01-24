@@ -117,18 +117,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
-  padding-top: 16px;
-  padding-bottom: 16px;
   color: #2196f3;
 }
 
 .header-hf-logo {
   color: #000000;
-}
-
-.logo-button-wrapper {
-  display: flex;
-  justify-content: space-between;
 }
 
 .header-contacts-link-icon {
@@ -200,10 +193,19 @@ img {
 }
 
 @media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .header {
     position: relative;
   }
+  .logo-button-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
   .menu-conteiner {
+    z-index: 2;
     display: none;
     position: absolute;
     top: 100%;
@@ -234,15 +236,17 @@ img {
     text-decoration: none;
     color: #212121;
   }
+  .nav .nav-list .nav-list-link.current {
+    padding-bottom: 8px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
-  .logo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+  .menu-conteiner {
+    display: flex;
   }
   .nav {
     display: flex;
@@ -251,7 +255,6 @@ img {
   }
   .nav-list {
     display: flex;
-    align-items: center;
     margin-right: 84px;
     margin-left: 88px;
   }
@@ -268,18 +271,14 @@ img {
   }
   .nav-list-item {
     display: flex;
-    align-items: center;
-  }
-  .menu-conteiner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-top: 32px;
   }
   .header-contacts {
     margin: 21px 0;
   }
   .header-contacts-link-mail,
   .header-contacts-link-tel {
+    display: block;
     font-size: 12px;
     line-height: 1.17;
   }
@@ -287,8 +286,41 @@ img {
     margin-top: 10px;
   }
   .header-contacts-link-icon {
+    display: inline-block;
     width: 14px;
     margin-right: 6px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  .nav-list {
+    margin-right: 305px;
+    margin-left: 0;
+  }
+  .header-contacts {
+    display: flex;
+    margin: 32px 0;
+  }
+  .header-contacts-link-mail, .header-contacts-link-tel {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .header-contacts-link-mail {
+    margin-right: 30px;
+  }
+  .header-contacts-link-tel {
+    margin-top: 0;
+  }
+  .header-contacts-item {
+    display: block;
+  }
+  .header-contacts .header-contacts-link-icon {
+    width: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -312,6 +344,7 @@ img {
   border-radius: 4px;
   border: none;
   background-color: #f5f4fa;
+  cursor: pointer;
   color: #212121;
 }
 
